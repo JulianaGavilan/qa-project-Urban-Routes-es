@@ -185,6 +185,8 @@ class UrbanRoutesPaymentMethod:
     another_place_in_card = UrbanRoutesPaymentMethods.Another_Place_On_Card
     add_card = UrbanRoutesPaymentMethods.Button_Add_Card
     button_close_section = UrbanRoutesPaymentMethods.Close_Button_Section_Payment
+    Inicial_route = UrbanRoutesPaymentMethods.star_route
+    final_driver_to_route = UrbanRoutesPaymentMethods.see_driver
 
     def __init__(self, driver):
         self.driver = driver
@@ -225,8 +227,17 @@ class UrbanRoutesPaymentMethod:
     def close_button_payment_section(self):
         self.driver.find_element(*self.button_close_section).click()
 
-    def confirm_payment_method(self):
-        return self.driver.find_element(*self.add_new_method).text
+    def wait_for_inicial_route(self):
+        WebDriverWait(self.driver,15).until(expected_conditions.visibility_of_element_located(self.Inicial_route))
+
+    def star_inicial_route(self):
+        self.driver.find_element(*self.Inicial_route).click()
+
+    def wait_for_driver(self):
+        WebDriverWait(self.driver,60).until(expected_conditions.visibility_of_element_located(self.final_driver_to_route))
+
+    def final_message_about_driver(self):
+       return self.driver.find_element(*self.final_driver_to_route).get_property('value')
 
     def add_new_payment(self,number_card,code_number):
         self.click_payment_methods_section()
@@ -239,7 +250,10 @@ class UrbanRoutesPaymentMethod:
         self.click_in_add_payment()
         self.wait_for_add_new_payment()
         self.close_button_payment_section()
-        self.confirm_payment_method()
+        self.wait_for_inicial_route()
+        self.star_inicial_route()
+        self.wait_for_driver()
+        self.final_message_about_driver()
 
 
 

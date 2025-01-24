@@ -31,11 +31,12 @@ class UrbanRoutesPaymentMethods:
     Payment_Methods = (By.XPATH,'//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[2]')
     Add_Information_card = (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[1]/div[2]/div[3]')
     Card_Number_Box = (By.XPATH,'//*[@id="number"]')
-    Card_Code_Box = ( By.XPATH,'//*[@id="code"]')
+    Card_Code_Box = ( By.XPATH, "//input[@id='code'][@class='card-input']")
     Another_Place_On_Card = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/div[1]')
     Button_Add_Card= (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[3]/button[1]')
     Close_Button_Section_Payment = (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[1]/button')
-
+    star_route= (By.XPATH,'//*[@id="root"]/div/div[3]/div[4]/button/span[2]')
+    see_driver = (By.XPATH,'//*[@id="root"]/div/div[5]/div[2]/div[1]/div')
 
 
 

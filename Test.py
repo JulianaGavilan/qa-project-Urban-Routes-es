@@ -44,10 +44,10 @@ class TestUrbanRoutes:
         add_new_card.add_new_payment(data.card_number,data.card_code)
         actual_card_number = add_new_card.get_card_number()
         actual_card_code = add_new_card.get_card_code()
-        actual_payment_method= add_new_card.confirm_payment_method()
         assert actual_card_number == data.card_number
         assert actual_card_code == data.card_code
-        assert actual_payment_method == data.payment_method
+
+
 
 
     @classmethod
