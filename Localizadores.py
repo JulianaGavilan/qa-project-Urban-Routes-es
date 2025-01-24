@@ -21,7 +21,7 @@ class UrbanRoutesOrderRequirementOptions:
 
 class UrbanRoutesAddNumberPhone:
     Button_number_phone= (By.CLASS_NAME,'np-text')
-    Add_number_phone= (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[1]/div[2]/div[3]/div[3]/div/img')
+    Add_number_phone= (By.XPATH,'//*[@id="phone"]')
     Button_next=(By.XPATH,'/html/body/div/div/div[1]/div[2]/div[1]/form/div[2]/button')
     Confirmation_code = (By.ID,'code')
     Button_confirmation = (By.XPATH,'/html/body/div/div/div[1]/div[2]/div[2]/form/div[2]/button[1]')

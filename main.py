@@ -86,7 +86,7 @@ class UrbanRoutesConfortOptions:
         self.driver.find_element(*self.look_taxi_button).click()
 
     def wait_for_taxi_types(self):
-        WebDriverWait(self.driver,10).until(expected_conditions.visibility_of_element_located(self.icon_confort_tariff))
+        WebDriverWait(self.driver,20).until(expected_conditions.visibility_of_element_located(self.icon_confort_tariff))
 
     def selector_confort_tariff(self):
         self.driver.find_element(*self.icon_confort_tariff).click()
