@@ -48,8 +48,6 @@ class TestUrbanRoutes:
         assert actual_card_code == data.card_code
 
 
-
-
     @classmethod
     def teardown_class(cls):
         cls.driver.quit()

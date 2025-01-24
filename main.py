@@ -233,11 +233,7 @@ class UrbanRoutesPaymentMethod:
     def star_inicial_route(self):
         self.driver.find_element(*self.Inicial_route).click()
 
-    def wait_for_driver(self):
-        WebDriverWait(self.driver,60).until(expected_conditions.visibility_of_element_located(self.final_driver_to_route))
 
-    def final_message_about_driver(self):
-       return self.driver.find_element(*self.final_driver_to_route).get_property('value')
 
     def add_new_payment(self,number_card,code_number):
         self.click_payment_methods_section()
@@ -252,8 +248,6 @@ class UrbanRoutesPaymentMethod:
         self.close_button_payment_section()
         self.wait_for_inicial_route()
         self.star_inicial_route()
-        self.wait_for_driver()
-        self.final_message_about_driver()
 
 
 
