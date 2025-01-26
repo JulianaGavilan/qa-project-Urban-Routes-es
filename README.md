@@ -1,5 +1,7 @@
 # Urban Routes Automation Testing
 
+Presentado por: Juliana Gavilan del grupo 19 de QA Engineer
+
 ## Descripción del Proyecto
 
 Este proyecto fue diseñado para la realización pruebas automatizadas
@@ -19,11 +21,12 @@ Lenguaje de programación principal utilizado por su simplicidad y legibilidad.
 ### Selenium: 
 Es una herramienta de código abierto que se utiliza para automatizar en navegadores web en este caso en particular con Google Chrome. 
 
+
 ### Pytest: 
 Es un Framework de pruebas que facilita la creación y ejecución de las mismas en Python.
 
 ### GitHub: 
-Es un plataforma de desarrollo colaborativo que nos permite gestionar las diferentes versiones del código fuente, lo cual nos permite llevar un control sobre los cambios que realizamos.
+Es una plataforma de desarrollo colaborativo que nos permite gestionar las diferentes versiones del código fuente, lo cual nos permite llevar un control sobre los cambios que realizamos.
 
 ### WebDriver: 
 Es una parte fundamental de Selenium que se encarga de interactuar directamente con el navegador web en la ejecución de las pruebas.
@@ -34,6 +37,8 @@ Es un formato de intercambio de datos ligero y fácil de usar usado para manejar
 ## Instrucciones para Ejecutar las Pruebas
 
 Instala las dependencias necesarias: Selenium, Pytest 
+
+
 
 El primer paso para el uso de esta automatización es el ingreso de una URL cuyo servidor este inicializado. En data y más específicamente en la variable urban_routes_url
 

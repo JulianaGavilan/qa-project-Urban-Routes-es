@@ -25,13 +25,17 @@ class TestUrbanRoutes:
         assert routes_page.get_from() == address_from
         assert routes_page.get_to() == address_to
 
-    def test_comfort_taxi_form(self):
+    def test_for_ice_creams(self):
+        confort_form = UrbanRoutesConfortOptions(self.driver)
+        actual_ice_cream_number = confort_form.get_ice_cream_number()
+        assert actual_ice_cream_number == data.number_of_ice_creams
+
+    def test_message_for_driver(self):
         confort_form = UrbanRoutesConfortOptions(self.driver)
         confort_form.get_look_confort_taxi(data.message_for_driver)
         actual_message_for_driver = confort_form.get_comment()
-        actual_ice_cream_number = confort_form.get_ice_cream_number()
         assert actual_message_for_driver == data.message_for_driver
-        assert actual_ice_cream_number == data.number_of_ice_creams
+
 
     def test_add_phone(self):
         add_phone_number = UrbanRoutesNumberPhone(self.driver)
