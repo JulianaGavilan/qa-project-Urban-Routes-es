@@ -15,9 +15,10 @@ class UrbanRoutesOrderRequirementOptions:
     By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div[2]/div/span')
     Ice_Cream_Counter = (By.XPATH,
                          '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[3]')
-    Number_Ice_Cream = (By.XPATH,
-                        '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]')
-
+    Number_Ice_Cream = (By.XPATH, '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]')
+    actual_tariff_selection = (By.CSS_SELECTOR,'#root > div > div.workflow > div.workflow-subcontainer > div.tariff-picker.shown > div.tariff-cards > div.tcard.active > div.tcard-title')
+    option_switches = (By.CLASS_NAME, 'switch')
+    option_switches_inputs = (By.CLASS_NAME, 'switch-input')
 
 class UrbanRoutesAddNumberPhone:
     Button_number_phone= (By.CLASS_NAME,'np-text')
@@ -36,7 +37,7 @@ class UrbanRoutesPaymentMethods:
     Button_Add_Card= (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[3]/button[1]')
     Close_Button_Section_Payment = (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[1]/button')
     star_route= (By.XPATH,'//*[@id="root"]/div/div[3]/div[4]/button/span[2]')
-    see_driver = (By.XPATH,'//*[@id="root"]/div/div[5]/div[2]/div[1]/div')
+    see_driver = (By.XPATH,'//*[@id="root"]/div/div[5]/div[2]/div[1]/div/div[1]')
 
 
 
