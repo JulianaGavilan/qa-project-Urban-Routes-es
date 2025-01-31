@@ -36,7 +36,7 @@ class UrbanRoutesPaymentMethods:
     Another_Place_On_Card = (By.XPATH, '//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/div[1]')
     Button_Add_Card= (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[3]/button[1]')
     Close_Button_Section_Payment = (By.XPATH,'//*[@id="root"]/div/div[2]/div[2]/div[1]/button')
-    star_route= (By.XPATH,'//*[@id="root"]/div/div[3]/div[4]/button/span[2]')
+    star_route= (By.XPATH,'//*[@id="root"]/div/div[3]/div[4]/button/span[1]')
     see_driver = (By.XPATH,'//*[@id="root"]/div/div[5]/div[2]/div[1]/div/div[1]')
 
 

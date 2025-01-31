@@ -162,8 +162,11 @@ class UrbanRoutesPageInicial:
     def close_button_payment_section(self):
         self.driver.find_element(*self.button_close_section).click()
 
+    def wait_for_a_take_taxi(self):
+        WebDriverWait(self.driver,20).until(expected_conditions.visibility_of_element_located(self.take_a_taxi))
+
     def click_in_taxi(self):
-        self.driver.find_element(self.take_a_taxi).click()
+        self.driver.find_element(*self.take_a_taxi).click()
 
     def confirm_payment_method(self):
         return self.driver.find_element(*self.add_new_method).text
@@ -178,8 +181,6 @@ class UrbanRoutesPageInicial:
         self.wait_for_inicial()
         self.set_from(from_address)
         self.set_to(to_address)
-        self.get_from()
-        self.get_to()
         self.wait_for_look_taxi_option()
         self.click_flash_option()
         self.order_a_taxi()
@@ -190,14 +191,10 @@ class UrbanRoutesPageInicial:
         self.write_message_to_driver(comment)
         self.add_two_ice_cream()
         self.wait_for_confirm_information()
-        self.get_ice_cream_number()
         self.selector_blankets_and_tissue()
-        self.get_confirmation_blankets_and_tissue()
-        self.get_tariff_comfort()
         self.wait_for_number_form()
         self.click_number_phone_button()
         self.write_number_phone(number_phone)
-        self.get_phone_number()
         self.click_set_phone()
         self.wait_for_code_confirmation()
         self.write_confirmation_code()
@@ -211,7 +208,6 @@ class UrbanRoutesPageInicial:
         self.click_in_add_payment()
         self.wait_for_add_new_payment()
         self.close_button_payment_section()
+        self.wait_for_a_take_taxi()
         self.click_in_taxi()
-        self.confirm_payment_method()
         self.wait_for_information()
-        self.get_information_about_driver()
