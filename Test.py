@@ -1,7 +1,9 @@
+
 import data
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from main import UrbanRoutesPageInicial
+
 
 class TestUrbanRoutes:
 
@@ -113,6 +115,19 @@ class TestUrbanRoutes:
         routes_page.travel_route(address_from, address_to, comment_for_driver, number_card, code_card, number_phone)
         actual_switch_situation = routes_page.get_confirmation_blankets_and_tissue()
         assert actual_switch_situation == data.blanket_and_tissue
+
+    def test_to_modal_taxi(self):
+        self.driver.get(data.urban_routes_url)
+        routes_page = UrbanRoutesPageInicial(self.driver)
+        address_from = data.address_from
+        address_to = data.address_to
+        comment_for_driver = data.message_for_driver
+        number_card = data.card_number
+        code_card = data.card_code
+        number_phone = data.phone_number
+        routes_page.travel_route(address_from, address_to, comment_for_driver, number_card, code_card, number_phone)
+        take_a_taxi_section = routes_page.get_information()
+        assert take_a_taxi_section == data.take_a_taxi_button
 
     def test_for_final_form(self):
         self.driver.get(data.urban_routes_url)

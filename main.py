@@ -11,7 +11,8 @@ class UrbanRoutesPageInicial:
     look_taxi_button = UrbanRoutesOrderRequirementOptions.look_for_taxi_button
     icon_confort_tariff = UrbanRoutesOrderRequirementOptions.Confort_tariff
     driver_message = UrbanRoutesOrderRequirementOptions.Message_For_Driver
-    blanket_and_tissue = UrbanRoutesOrderRequirementOptions.Blankets_And_Tissue_Slider
+    blanket_and_tissue = UrbanRoutesOrderRequirementOptions.option_switches
+    blanket_And_tissue_switch = UrbanRoutesOrderRequirementOptions.option_switches_inputs
     counter_of_ice_creams = UrbanRoutesOrderRequirementOptions.Ice_Cream_Counter
     ice_cream_number = UrbanRoutesOrderRequirementOptions.Number_Ice_Cream
     actual_tariff = UrbanRoutesOrderRequirementOptions.actual_tariff_selection
@@ -30,6 +31,7 @@ class UrbanRoutesPageInicial:
     button_close_section = UrbanRoutesPaymentMethods.Close_Button_Section_Payment
     see_driver_for_route = UrbanRoutesPaymentMethods.see_driver
     take_a_taxi = UrbanRoutesPaymentMethods.star_route
+    information_to_route = UrbanRoutesPaymentMethods.mensage_for_route
 
     def __init__(self, driver):
         self.driver = driver
@@ -76,6 +78,7 @@ class UrbanRoutesPageInicial:
 
     def selector_blankets_and_tissue(self):
         self.driver.find_element(*self.blanket_and_tissue).click()
+        self.get_confirmation_blankets_and_tissue()
 
     def add_two_ice_cream(self):
         self.driver.find_element(*self.counter_of_ice_creams).click()
@@ -88,8 +91,8 @@ class UrbanRoutesPageInicial:
         return self.driver.find_element(*self.driver_message).get_property('value')
 
     def get_confirmation_blankets_and_tissue (self):
-        switch= self.driver.find_element(*self.blanket_and_tissue)
-        return switch[0].get_property('checked')
+        switch= self.driver.find_element(*self.blanket_And_tissue_switch)
+        return switch.get_property('checked')
 
     def get_ice_cream_number(self):
         return self.driver.find_element(*self.ice_cream_number).text
@@ -175,7 +178,10 @@ class UrbanRoutesPageInicial:
         WebDriverWait(self.driver ,60).until(expected_conditions.visibility_of_element_located(self.see_driver_for_route))
 
     def get_information_about_driver(self):
-        return self.driver.find_element(*self.see_driver_for_route).text
+        return self.driver.find_element(*self.information_to_route).text
+
+    def get_information (self):
+        return self.driver.find_element(*self.take_a_taxi).text
 
     def travel_route(self,from_address,to_address,comment,number_card, code_number,number_phone):
         self.wait_for_inicial()

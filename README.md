@@ -41,10 +41,40 @@ Instala las dependencias necesarias: Selenium, Pytest
 
 
 El primer paso para el uso de esta automatización es el ingreso de una URL cuyo servidor este inicializado. En data y más específicamente en la variable urban_routes_url
+El segundo paso es abrir la terminal y poner el siguiente comando 
 
-Esta automatización cuenta con 4 pruebas seccionadas de la siguiente manera
+#### Prueba 1  
 
-La primera orientada a establecer la ruta inicial del trayecto aporta las direcciones desde donde se inicia a donde finaliza el recorrido.
-La segunda realiza las diferentes solicitudes a los requerimientos propios del tipo de vehículo que selecciona.
-La tercera agrega el número de celular realizando la confirmación por medio del código que genera el programa
-La cuarta y última agrega el método de pago en este caso tarjeta.
+pytest Test.py::TestUrbanRoutes::test_set_route 
+
+#### Prueba 2  
+
+pytest Test.py::TestUrbanRoutes::test_for_ice_creams
+
+#### Prueba 3  
+
+pytest Test.py::TestUrbanRoutes::test_message_for_driver
+
+#### Prueba 4  
+
+pytest Test.py::TestUrbanRoutes::test_add_phone
+
+#### Prueba 5  
+
+pytest Test.py::TestUrbanRoutes::test_add_new_payment
+
+#### Prueba 6  
+
+pytest Test.py::TestUrbanRoutes::test_comfort_tariff
+
+#### Prueba 7  
+
+pytest Test.py::TestUrbanRoutes::test_for_blankets_and_tissue
+
+#### Prueba 8  
+
+pytest Test.py::TestUrbanRoutes::test_to_modal_taxi
+
+#### Prueba 9  
+
+pytest Test.py::TestUrbanRoutes::test_for_final_form
