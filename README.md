@@ -83,28 +83,40 @@ En esta prueba se comprueban la cantidad de helados solicitados. Para obtener la
 
 pytest Test.py::TestUrbanRoutes::test_message_for_driver
 
-
+En esta pruba se evalua el mensaje al conductor. Utilizando .send_keys() y .get_property('value')
 
 #### Prueba 4  
 
 pytest Test.py::TestUrbanRoutes::test_add_phone
 
+Esta prueba confirma el numero de telefono agregado. Utilizando .get_property('value')
+
 #### Prueba 5  
 
 pytest Test.py::TestUrbanRoutes::test_add_new_payment
+
+Esta prueba comprueba la informacion de la tarjeta agregada la cual es su numero y codigo. Utilizando .get_property('value')
 
 #### Prueba 6  
 
 pytest Test.py::TestUrbanRoutes::test_comfort_tariff
 
+En esta prueba se revisa que la tarifa seleccionada corresponda al modo comfort. Utilizando .text
+
 #### Prueba 7  
 
 pytest Test.py::TestUrbanRoutes::test_for_blankets_and_tissue
+
+En esta prueba se revisa que la seleccion de manta y pañuelos se encuentre seleccionada. Se utiliza .get_property('checked') y .click()
 
 #### Prueba 8  
 
 pytest Test.py::TestUrbanRoutes::test_to_modal_taxi
 
+En esta prueba se revisa que aparezca el modal relacionado con la solicitud del vehiculo luego de llenar todo el formulario. Se utiliza .text
+
 #### Prueba 9  
 
 pytest Test.py::TestUrbanRoutes::test_for_final_form
+
+En esta ultima prueba se confirma la informacion del taxi que llegara una vez se realice la espera correspondiente del servicio 
