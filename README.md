@@ -4,6 +4,8 @@ Presentado por: Juliana Gavilan del grupo 19 de QA Engineer
 
 ## Descripción del Proyecto
 
+
+
 Este proyecto fue diseñado para la realización pruebas automatizadas
 sobre la aplicación Urban Routes, 
 que es una plataforma para la solicitud de taxis con diferentes opciones de vehículos. 
@@ -12,6 +14,32 @@ usuario, la selección de la tarifa flash, en el tipo de vehículo confort,
 la información del número de teléfono junto con la confirmación por código del mismo, 
 El registro de un método de pago en este caso tarjeta, pasando por la solicitud al conductor por medio de un comentario,
 la solicitud de pañuelos y mantas además de dos helados, para finalizar con la solicitud del vehículo al sistema.
+
+<img decoding="async" 
+     src="https://img.shields.io/badge/DevTools-FADADD?style=for-the-badge&logo=Drawio&logoColor=white" 
+     alt="Drawio"/>
+<img decoding="async" 
+     src="https://img.shields.io/badge/Python-E6E6FA?style=for-the-badge&logo=python&logoColor=white" 
+     alt="python"/>
+<img decoding="async" 
+     src="https://img.shields.io/badge/PyCharm-B2E0F7?&style=for-the-badge&logo=PyCharm&logoColor=white" 
+     alt="PyCharm"/>
+<img decoding="async" 
+     src="https://img.shields.io/badge/Git_Bash-FFFACD?&style=for-the-badge&logo=GitBash&logoColor=white" 
+     alt="GitBash"/>
+<img decoding="async" 
+     src="https://img.shields.io/badge/GitHub-C1F0DC?&style=for-the-badge&logo=GitHub&logoColor=white" 
+     alt="GitHub"/>
+<img decoding="async"
+     src="https://img.shields.io/badge/Selenium-FFDAB9?style=for-the-badge&logo=Selenium&logoColor=white" 
+     alt="Selenium"/>
+<img decoding="async" 
+     src="https://img.shields.io/badge/Pytest-AEDFF7?style=for-the-badge&logo=pytest&logoColor=white" 
+     alt="pytest"/>
+<img decoding="async"
+     src="https://img.shields.io/badge/Pip-FFB6B9?style=for-the-badge&logo=Pip&logoColor=white" 
+     alt="Pip"/>
+
 
 ## Tecnologías Utilizadas
 
