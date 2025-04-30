@@ -4,7 +4,7 @@ Presentado por: Juliana Gavilan del grupo 19 de QA Engineer
 
 ## Descripción del Proyecto
 
-<img src="https://github.com/JulianaGavilan/qa-project-Urban-Routes-es/blob/main/Image%20(12).png" />
+[![resultado-esperado-p-2.png](https://i.postimg.cc/bv96QKfm/resultado-esperado-p-2.png)](https://postimg.cc/Jytc8YnX)
 
 Este proyecto fue diseñado para la realización pruebas automatizadas
 sobre la aplicación Urban Routes, 
@@ -65,19 +65,23 @@ Es un formato de intercambio de datos ligero y fácil de usar usado para manejar
 
 1. Instala las dependencias necesarias: Selenium, Pytest 
 2. El siguiente paso para el uso de esta automatización es el ingreso de una URL cuyo servidor este inicializado. En data y más específicamente en la variable urban_routes_url
-3. En este paso se abre la terminal y se pone uno de los siguientes comandos de acuerdo a la prueba que se quiera ejecutar 
+3. En este paso se abre la terminal y se pone uno de los siguientes comandos de acuerdo a la prueba que se quiera ejecutar
+   
 
 #### Prueba 1  
 
 pytest Test.py::TestUrbanRoutes::test_set_route 
 
-En esta prueba se realizan las coprobaciones que corresponden a los campos de direccion. Haciendo uso de .send_keys() y .get_property()
+En esta prueba se realizan las comprobaciones que corresponden a los campos de direccion. Haciendo uso de .send_keys() y .get_property()
+
+
 
 #### Prueba 2  
 
 pytest Test.py::TestUrbanRoutes::test_for_ice_creams
 
 En esta prueba se comprueban la cantidad de helados solicitados. Para obtener la informacion se utilizo .click() y .text
+
 
 #### Prueba 3  
 
