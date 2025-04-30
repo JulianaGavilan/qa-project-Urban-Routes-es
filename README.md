@@ -4,7 +4,7 @@ Presentado por: Juliana Gavilan del grupo 19 de QA Engineer
 
 ## Descripción del Proyecto
 
-[![resultado-esperado-p-2.png](https://i.postimg.cc/bv96QKfm/resultado-esperado-p-2.png)](https://postimg.cc/Jytc8YnX)
+[![Urban-Routes.png](https://i.postimg.cc/Gh3s2VXc/Urban-Routes.png)](https://postimg.cc/9zSfg83S)
 
 Este proyecto fue diseñado para la realización pruebas automatizadas
 sobre la aplicación Urban Routes, 
@@ -74,7 +74,7 @@ pytest Test.py::TestUrbanRoutes::test_set_route
 
 En esta prueba se realizan las comprobaciones que corresponden a los campos de direccion. Haciendo uso de .send_keys() y .get_property()
 
-
+[![prueba-1-Urban-routes.png](https://i.postimg.cc/pVJFPRYG/prueba-1-Urban-routes.png)](https://postimg.cc/Hjjx2GNX)
 
 #### Prueba 2  
 
@@ -82,6 +82,7 @@ pytest Test.py::TestUrbanRoutes::test_for_ice_creams
 
 En esta prueba se comprueban la cantidad de helados solicitados. Para obtener la informacion se utilizo .click() y .text
 
+[![prueba-Helados.png](https://i.postimg.cc/MKtVmqnM/prueba-Helados.png)](https://postimg.cc/BXLjqWc4)
 
 #### Prueba 3  
 
@@ -89,11 +90,15 @@ pytest Test.py::TestUrbanRoutes::test_message_for_driver
 
 En esta pruba se evalua el mensaje al conductor. Utilizando .send_keys() y .get_property('value')
 
+[![Prueba-3-Urban-routes.png](https://i.postimg.cc/C1jfBgyK/Prueba-3-Urban-routes.png)](https://postimg.cc/wyjBZnjK)
+
 #### Prueba 4  
 
 pytest Test.py::TestUrbanRoutes::test_add_phone
 
 Esta prueba confirma el numero de telefono agregado. Utilizando .get_property('value')
+
+[![prueba-4-Urban-Routes.png](https://i.postimg.cc/SRd2dfxF/prueba-4-Urban-Routes.png)](https://postimg.cc/2LqS8vW2)
 
 #### Prueba 5  
 
@@ -101,11 +106,15 @@ pytest Test.py::TestUrbanRoutes::test_add_new_payment
 
 Esta prueba comprueba la informacion de la tarjeta agregada la cual es su numero y codigo. Utilizando .get_property('value')
 
+[![Prueba-5-Urban-Routes.png](https://i.postimg.cc/QtLTdMyP/Prueba-5-Urban-Routes.png)](https://postimg.cc/B8g6hJsc)
+
 #### Prueba 6  
 
 pytest Test.py::TestUrbanRoutes::test_comfort_tariff
 
 En esta prueba se revisa que la tarifa seleccionada corresponda al modo comfort. Utilizando .text
+
+[![prueba-2-Urban-Routes.png](https://i.postimg.cc/Zn4v6MZx/prueba-2-Urban-Routes.png)](https://postimg.cc/njSLJTXX)
 
 #### Prueba 7  
 
@@ -113,14 +122,20 @@ pytest Test.py::TestUrbanRoutes::test_for_blankets_and_tissue
 
 En esta prueba se revisa que la seleccion de manta y pañuelos se encuentre seleccionada. Se utiliza .get_property('checked') y .click()
 
+[![prueba-7-Urban-Routes.png](https://i.postimg.cc/g0LhphN8/prueba-7-Urban-Routes.png)](https://postimg.cc/DWF0dSVw)
+
 #### Prueba 8  
 
 pytest Test.py::TestUrbanRoutes::test_to_modal_taxi
 
 En esta prueba se revisa que aparezca el modal relacionado con la solicitud del vehiculo luego de llenar todo el formulario. Se utiliza .text
 
+[![prueba-modal.png](https://i.postimg.cc/K8HTCfrm/prueba-modal.png)](https://postimg.cc/pmKyFD6S)
+
 #### Prueba 9  
 
 pytest Test.py::TestUrbanRoutes::test_for_final_form
 
 En esta ultima prueba se confirma la informacion del taxi que llegara una vez se realice la espera correspondiente del servicio 
+
+[![prueba-final-Urban-routes.png](https://i.postimg.cc/rwmWh34h/prueba-final-Urban-routes.png)](https://postimg.cc/HVqVnSB5)
